@@ -3,6 +3,7 @@ import type { WebSearchResultBlock } from '@anthropic-ai/sdk/resources'
 import type { GenerateImagesConfig, GroundingMetadata, PersonGeneration } from '@google/genai'
 import type OpenAI from 'openai'
 import type { CSSProperties } from 'react'
+import type { SidebarIcon as SharedSidebarIcon } from '@cinaseek/web-shared/navigation'
 
 export * from './file'
 export * from './note'
@@ -667,16 +668,7 @@ export const isAutoDetectionMethod = (method: string): method is AutoDetectionMe
   return Object.hasOwn(AutoDetectionMethods, method)
 }
 
-export type SidebarIcon =
-  | 'assistants'
-  | 'agents'
-  | 'paintings'
-  | 'translate'
-  | 'minapp'
-  | 'knowledge'
-  | 'files'
-  | 'code_tools'
-  | 'notes'
+export type SidebarIcon = SharedSidebarIcon
 
 export type ExternalToolResult = {
   mcpTools?: MCPTool[]

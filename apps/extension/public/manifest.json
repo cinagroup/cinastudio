@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "CinaSeek Companion",
+  "description": "为 CinaSeek Web 提供选区捕获与后台桥接的浏览器扩展。",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "CinaSeek 捕获"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "commands": {
+    "capture-selection": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      },
+      "description": "捕获当前选区并发送到 CinaSeek"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "128": "icon.svg"
+  }
+}

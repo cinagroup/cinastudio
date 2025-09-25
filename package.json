@@ -12,7 +12,8 @@
   "workspaces": {
     "packages": [
       "local",
-      "packages/*"
+      "packages/*",
+      "apps/*"
     ],
     "installConfig": {
       "hoistingLimits": [
@@ -20,7 +21,9 @@
         "packages/mcp-trace/trace-core",
         "packages/mcp-trace/trace-node",
         "packages/mcp-trace/trace-web",
-        "packages/extension-table-plus"
+        "packages/extension-table-plus",
+        "apps/web",
+        "apps/extension"
       ]
     }
   },

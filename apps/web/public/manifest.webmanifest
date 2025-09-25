@@ -1,0 +1,23 @@
+{
+  "name": "CinaSeek",
+  "short_name": "CinaSeek",
+  "description": "CinaSeek Web：面向浏览器的智能助手与知识协作工作区。",
+  "start_url": "/workspace",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#7c3aed",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "lang": "zh-CN",
+  "id": "/",
+  "scope": "/",
+  "screenshots": []
+}

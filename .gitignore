@@ -65,6 +65,10 @@ vitest.config.*.timestamp-*
 
 # TypeScript incremental build
 .tsbuildinfo
+*.tsbuildinfo
+
+# Next.js build output
+apps/web/.next
 
 # playwright
 playwright-report
